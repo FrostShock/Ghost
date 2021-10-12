@@ -1,4 +1,8 @@
-Ghost v1.1b
+This is a fork of https://github.com/diff3/Ghost
+
+The only modification is that now the Ghost hotkey will toggle between showing the Ghost action bar, instead of showing it only while the hotkey is pressed. This is the way RingMenu works too
+
+Ghost v1.1c
 ----------
 
 Don't forget to bind a key to "View frame" under Ghost in Key Bindings!
