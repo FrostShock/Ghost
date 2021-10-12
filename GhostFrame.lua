@@ -80,7 +80,8 @@ end
 -- Show frame under mouse pointer
 
 function ghostShowFrame()
-  if (keystate == "down") then
+  if (keystate == "up") then return end;
+  if (GToggle == 1) then
     local frameScale = ghost['frameScale'];
     local mouseX, mouseY = GetCursorPosition();
     local wowScale = UIParent:GetEffectiveScale()
@@ -103,6 +104,7 @@ function ghostShowFrame()
     GhostGuideText:Hide();
     Ghost:Hide();
   end
+  GToggle = 1 - GToggle;
 end
 
 -- Set button text
